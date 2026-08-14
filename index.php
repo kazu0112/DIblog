@@ -16,7 +16,7 @@
     
     ?>
 
-    <img src="diblog_logo.jpg">
+    
     
     <header>
         <ul>
@@ -26,6 +26,7 @@
             <li>登録フォーム</li>
             <li>問い合わせ</li>
             <li>その他</li>
+            <li><a href="regist.php">アカウント登録</a></li>
         </ul>
     </header>
     
