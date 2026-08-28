@@ -1,3 +1,41 @@
+<?php
+$family_name = $_POST['family_name'] ?? "";
+$family_name_error = $_POST['family_name_error'] ?? "";
+
+$last_name = $_POST['last_name'] ?? "";
+$last_name_error = $_POST['last_name_error'] ?? "";
+
+$family_name_kana = $_POST['family_name_kana'] ?? "";
+$family_name_kana_error = $_POST['family_name_kana_error'] ?? "";
+
+$last_name_kana = $_POST['last_name_kana'] ?? "";
+$last_name_kana_error = $_POST['last_name_kana_error'] ?? "";
+
+$mail = $_POST['mail'] ?? "";
+$mail_error = $_POST['mail_error'] ?? "";
+
+$password = $_POST['password'] ?? "";
+$password_error = $_POST['password_error'] ?? "";
+
+$gender = $_POST['gender'] ?? "";
+$gender_error = $_POST['gender_error'] ?? "";
+
+$postal_code = $_POST['postal_code'] ?? "";
+$postal_code_error = $_POST['postal_code_error'] ?? "";
+
+$prefecture = $_POST['prefecture'] ?? "";
+$prefecture_error = $_POST['prefecture_error'] ?? "";
+
+$address_1 = $_POST['address_1'] ?? "";
+$address_1_error = $_POST['address_1_error'] ?? "";
+
+$address_2 = $_POST['address_2'] ?? "";
+$address_2_error = $_POST['address_2_error'] ?? "";
+
+$authority = $_POST['authority'] ?? "";
+$authority_error = $_POST['authority_error'] ?? "";
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -15,26 +53,62 @@
         <div>
             <label>名前（性）</label><br>
             <input type="text" name="family_name" maxlength="10" value="<?php echo $_POST['family_name'] ?? ''; ?>">
+            
+            <?php
+                if ($family_name_error != "") {
+                echo '<p style="color:red;">' . $family_name_error . '</p>';
+                }
+            ?> 
         </div>
         <div>
             <label>名前(名)</label><br>
             <input type="text" name="last_name" maxlength="10" value="<?php echo $_POST['last_name'] ?? ''; ?>">
+            
+            <?php
+                if ($last_name_error != "") {
+                echo '<p style="color:red;">' . $last_name_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <lable>カナ（性）</lable><br>
             <input type="text" name="family_name_kana" maxlength="10" value="<?php echo $_POST['family_name_kana'] ?? ''; ?>">
+            
+            <?php
+                if ($family_name_kana_error != "") {
+                echo '<p style="color:red;">' . $family_name_kana_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <lable>カナ（名）</lable><br>
             <input type="text" name="last_name_kana" maxlength="10" value="<?php echo $_POST['last_name_kana'] ?? ''; ?>">
+            
+            <?php
+                if ($last_name_kana_error != "") {
+                echo '<p style="color:red;">' . $last_name_kana_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <label>メールアドレス</label><br>
             <input type="text" name="mail" maxlength="100" value="<?php echo $_POST['mail'] ?? ''; ?>">
+            
+            <?php
+                if ($mail_error != "") {
+                    echo '<p style="color:red;">' . $mail_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <label>パスワード</label><br>
             <input type="password" name="password" maxlength="10" value="<?php echo $_POST['password'] ?? ''; ?>">
+            
+            <?php
+                if ($password_error != "") {
+                    echo '<p style="color:red;">' . $password_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <label>性別</label><br>
@@ -44,6 +118,12 @@
         <div>
             <label>郵便番号</label><br>
             <input type="text" name="postal_code" maxlength="7" value="<?php echo $_POST['postal_code'] ?? ''; ?>">
+            
+            <?php
+                if ($postal_code_error != "") {
+                    echo '<p style="color:red;">' . $postal_code_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <label>住所（都道府県）</label><br>
@@ -147,10 +227,22 @@
         <div>
             <label>住所（市区町村）</label><br>
             <input type="text" name="address_1" maxlength="10" value="<?php echo $_POST['address_1'] ?? ''; ?>">
+            
+            <?php
+                if ($address_1_error != "") {
+                    echo '<p style="color:red;">' . $address_1_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <label>住所（番地）</label><br>
             <input type="text" name="address_2" maxlength="100" value="<?php echo $_POST['address_2'] ?? ''; ?>">
+            
+            <?php
+                if ($address_2_error != "") {
+                    echo '<p style="color:red;">' . $address_2_error . '</p>';
+                }
+            ?>
         </div>
         <div>
             <label>アカウント権限</label><br>
