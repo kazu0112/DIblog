@@ -82,7 +82,7 @@ if ($password == "") {
     $error_count++;
 } else {
     if (preg_match("/^[a-zA-Z0-9]+$/", $password)) {
-} else {
+    } else {
         $password_error = "パスワードに使用できない文字が含まれています。";
         $error_count++;
     }

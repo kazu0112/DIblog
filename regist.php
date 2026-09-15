@@ -51,7 +51,7 @@ $authority_error = $_POST['authority_error'] ?? "";
     <form method="post" action="regist_confirm.php">
     
         <div>
-            <label>名前（性）</label><br>
+            <label>名前（姓）</label><br>
             <input type="text" name="family_name" maxlength="10" value="<?php echo $_POST['family_name'] ?? ''; ?>">
             
             <?php
@@ -71,7 +71,7 @@ $authority_error = $_POST['authority_error'] ?? "";
             ?>
         </div>
         <div>
-            <lable>カナ（性）</lable><br>
+            <label>カナ（姓）</label><br>
             <input type="text" name="family_name_kana" maxlength="10" value="<?php echo $_POST['family_name_kana'] ?? ''; ?>">
             
             <?php
@@ -81,7 +81,7 @@ $authority_error = $_POST['authority_error'] ?? "";
             ?>
         </div>
         <div>
-            <lable>カナ（名）</lable><br>
+            <label>カナ（名）</label><br>
             <input type="text" name="last_name_kana" maxlength="10" value="<?php echo $_POST['last_name_kana'] ?? ''; ?>">
             
             <?php
@@ -223,7 +223,13 @@ $authority_error = $_POST['authority_error'] ?? "";
 
                     <option value="沖縄県" <?php if (isset($_POST['prefecture']) && $_POST['prefecture'] == "沖縄県") echo "selected"; ?>> 沖縄県 </option>
             </select>
-            <p style="color:red;"><?php echo $prefecture_error; ?></p>
+            
+            <?php
+                if ($prefecture_error != "") {
+                    echo '<p style="color:red;">' . $prefecture_error . '</p>';
+                }
+            ?>
+            
         </div>
         <div>
             <label>住所（市区町村）</label><br>
