@@ -23,7 +23,7 @@ if ($family_name == "") {
 } else{
     if (preg_match("/^[ぁ-んー-龥]+$/u", $family_name)){
 } else{
-        $family_name_error = "名前（姓)に使用できない文字が含まれています。";
+        $family_name_error = "名前（姓）に使用できない文字が含まれています。";
         $error_count++;
     }
 }
@@ -35,7 +35,7 @@ if ($last_name == ""){
 } else{
     if (preg_match("/^[ぁ-んー-龥]+$/u", $last_name)){
 } else{
-        $last_name_error = "名前（名)に使用できない文字が含まれています。";
+        $last_name_error = "名前（名）に使用できない文字が含まれています。";
         $error_count++;
     }
 }
@@ -174,9 +174,9 @@ if ($authority == 0){
 
     <h1>アカウント登録確認</h1>
         
-        <p>名前（性）:<?php echo $family_name; ?></p>
+        <p>名前（姓）:<?php echo $family_name; ?></p>
         <p>名前（名）:<?php echo $last_name; ?></p>
-        <p>カナ（性）:<?php echo $family_name_kana; ?></p>
+        <p>カナ（姓）:<?php echo $family_name_kana; ?></p>
         <p>カナ（名）:<?php echo $last_name_kana; ?></p>
         <p>メールアドレス:<?php echo $mail; ?></p>
         <p>パスワード:<?php echo str_repeat("⚫️", strlen($password)); ?></p>
@@ -231,7 +231,7 @@ if ($authority == 0){
         } else {
         ?>
 
-        <form id="errorForm" form method="post" action="regist.php">
+        <form id="errorForm" method="post" action="regist.php">
 
             <input type="hidden" name="family_name" value="<?php echo $family_name; ?>">
             <input type="hidden" name="family_name_error" value="<?php echo $family_name_error; ?>">
