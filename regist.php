@@ -223,6 +223,7 @@ $authority_error = $_POST['authority_error'] ?? "";
 
                     <option value="沖縄県" <?php if (isset($_POST['prefecture']) && $_POST['prefecture'] == "沖縄県") echo "selected"; ?>> 沖縄県 </option>
             </select>
+            <p style="color:red;"><?php echo $prefecture_error; ?></p>
         </div>
         <div>
             <label>住所（市区町村）</label><br>
