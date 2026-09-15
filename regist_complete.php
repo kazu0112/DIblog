@@ -34,7 +34,8 @@ $sql = "INSERT INTO account
 $result = $mysqli->query($sql);
 
 if (!$result) {
-    die("登録に失敗しました。");
+    echo "<p style='color:red;'>エラーが発生したためアカウント登録できません。</p>";
+    exit;
 }
 
 ?>
