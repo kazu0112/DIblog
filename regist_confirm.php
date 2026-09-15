@@ -190,7 +190,6 @@ if ($authority == 0){
     <form method="post" action="regist_complete.php">
 
         <input type="hidden" name="family_name" value="<?php echo $family_name; ?>">
-        <input type="hidden" name="family_name_error" value="<?php echo $family_name_error; ?>">
         <input type="hidden" name="last_name" value="<?php echo $last_name; ?>">
         <input type="hidden" name="family_name_kana" value="<?php echo $family_name_kana; ?>">
         <input type="hidden" name="last_name_kana" value="<?php echo $last_name_kana; ?>">
