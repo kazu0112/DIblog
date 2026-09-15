@@ -42,10 +42,21 @@ $authority_error = $_POST['authority_error'] ?? "";
 <head>
     <meta charset="UTF-8">
     <title>アカウント登録</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="regist.css">
 </head>
     
 <body>
+    
+<header>    
+    <ul>
+        <li>ヘッダー</li>
+    </ul>
+</header>
+    
+<main>
+    <div class="main-container">
+    <div class="right">
+        
     <h1>アカウント登録</h1>
     
     <form method="post" action="regist_confirm.php">
@@ -262,6 +273,15 @@ $authority_error = $_POST['authority_error'] ?? "";
             <input type="submit" value="確認する">
         </div>
     </form>
+        
+    </div>
+    </div>
+</main>
+    
+<footer>
+    フッター
+</footer>
+
 </body>
     
 </html>
