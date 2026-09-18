@@ -38,7 +38,6 @@ h1 {
     text-align: center;
 }
 
-
 /* フォーム */
 form {
     width: 100%;
@@ -70,4 +69,17 @@ footer {
     text-align: center;
     line-height: 50px;
     margin-top: 30px;
+}
+
+/* 完了画面 */
+.complete {
+    text-align: center;
+}
+
+.complete p {
+    text-align: center;
+}
+
+.complete form {
+    text-align: center;
 }

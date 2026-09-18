@@ -162,7 +162,7 @@ if ($authority == 0){
 <head>
     <meta charset="UTF-8">
     <title>アカウント登録確認</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="regist.css">
 </head>
 
 <body>

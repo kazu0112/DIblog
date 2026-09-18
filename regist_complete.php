@@ -46,30 +46,34 @@ if (!$result) {
 <head>
     <meta charset="UTF-8">
     <title>アカウント登録完了</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="regist.css?v=2">
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="navigation">
-            ナビゲーションバー
-        </div>
+<header>
+    <ul>
+        <li>ヘッダー</li>
+    </ul>
+</header>
 
-        <div class="main">
-            <h2>アカウント登録完了画面</h2>
-            <div class="complete">
-                <h3>登録完了しました</h3>
+<main>
+    <div class="main-container">
+        <div class="right"> 
+            <h1>アカウント登録完了画面</h1>
+           <div class="complete">
+            <p>登録完了しました</p>
                 <form method="post" action="index.php">
                     <input type="submit" value="TOPページへ戻る">
                 </form>
             </div>
         </div>
+    </div>
+</main>
 
-        <div class="footer">
-            フッター
-        </div>
+<footer>
+    フッター
+</footer>
 
-    </div>    
 </body>
 </html>
