@@ -162,10 +162,20 @@ if ($authority == 0){
 <head>
     <meta charset="UTF-8">
     <title>アカウント登録確認</title>
-    <link rel="stylesheet" type="text/css" href="regist.css">
+    <link rel="stylesheet" type="text/css" href="regist.css?v=2">
 </head>
 
 <body>
+    
+<header>
+    <ul>
+        <li>ヘッダー</li>
+    </ul>
+</header>
+
+<main>
+    <div class="main-container">
+        <div class="right">
     
     <?php
     //エラーが0件の場合
@@ -280,6 +290,14 @@ if ($authority == 0){
     <?php
     }
     ?>
+            
+        </div>
+    </div>
+</main>
+
+<footer>
+    フッター
+</footer>
 
 </body>
 

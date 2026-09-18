@@ -71,6 +71,16 @@ footer {
     margin-top: 30px;
 }
 
+
+/* 確認画面 */
+.right p {
+    text-align: center;
+}
+
+.right form {
+    text-align: center;
+}
+
 /* 完了画面 */
 .complete {
     text-align: center;
